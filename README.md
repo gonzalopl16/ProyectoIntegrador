@@ -5,4 +5,4 @@ Magallanes Rodriguez,Juan Luis
 
 Grupo 3:
 Porras Lopez, Luis Gonzalo
-Mora Torres, Luis Rodrigoñ
+Mora Torres, Luis Rodrigo
