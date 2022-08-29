@@ -6,8 +6,9 @@ Magallanes Rodriguez,Juan Luis
 
 #Grupo 3:
 
-*_Calculadora de Matices_*
-
 Porras Lopez, Luis Gonzalo
 
 Mora Torres, Luis Rodrigo
+
+#Proyecto:
+*_Calculadora de Matices_*
