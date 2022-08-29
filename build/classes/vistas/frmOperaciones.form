@@ -25,10 +25,10 @@
     <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnBorrar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/Ventana 1 Integrador (900 &#xd7; 800&#xa0;px) (120 &#xd7; 40&#xa0;px).png"/>
+          <Image iconType="3" name="/imagenes/Boton Borrar.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -120,10 +120,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="btnSumar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/1.png"/>
+          <Image iconType="3" name="/imagenes/Boton Sumar.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -132,10 +132,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="btnMultiplicar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/2.png"/>
+          <Image iconType="3" name="/imagenes/Boton Multiplicar.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -144,10 +144,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="btnRestar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/3.png"/>
+          <Image iconType="3" name="/imagenes/Boton Restar.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -156,10 +156,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
+    <Component class="javax.swing.JButton" name="btnDividir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/4.png"/>
+          <Image iconType="3" name="/imagenes/Boton Dividir.png"/>
         </Property>
       </Properties>
       <Constraints>

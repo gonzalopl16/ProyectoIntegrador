@@ -28,24 +28,24 @@ public class frmOperaciones extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btnBorrar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnSumar = new javax.swing.JButton();
+        btnMultiplicar = new javax.swing.JButton();
+        btnRestar = new javax.swing.JButton();
+        btnDividir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Ventana 1 Integrador (900 × 800 px) (120 × 40 px).png"))); // NOI18N
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 120, 40));
+        btnBorrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Borrar.png"))); // NOI18N
+        getContentPane().add(btnBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 120, 40));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -72,17 +72,17 @@ public class frmOperaciones extends javax.swing.JFrame {
         jLabel4.setText("MATRIZ 1");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, -1));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/1.png"))); // NOI18N
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 710, 120, 40));
+        btnSumar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Sumar.png"))); // NOI18N
+        getContentPane().add(btnSumar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 710, 120, 40));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/2.png"))); // NOI18N
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 710, 120, 40));
+        btnMultiplicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Multiplicar.png"))); // NOI18N
+        getContentPane().add(btnMultiplicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 710, 120, 40));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/3.png"))); // NOI18N
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 710, 120, 40));
+        btnRestar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Restar.png"))); // NOI18N
+        getContentPane().add(btnRestar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 710, 120, 40));
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/4.png"))); // NOI18N
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 710, 120, 40));
+        btnDividir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Dividir.png"))); // NOI18N
+        getContentPane().add(btnDividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 710, 120, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Ventana 1 Integrador (900 × 800 px).png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -127,11 +127,11 @@ public class frmOperaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnBorrar;
+    private javax.swing.JButton btnDividir;
+    private javax.swing.JButton btnMultiplicar;
+    private javax.swing.JButton btnRestar;
+    private javax.swing.JButton btnSumar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
