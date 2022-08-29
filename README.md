@@ -1,14 +1,14 @@
 # ProyectoIntegrador
 
-#Profesor: 
+# Profesor: 
 
 Magallanes Rodriguez,Juan Luis
 
-#Grupo 3:
+Grupo 3:
 
 Porras Lopez, Luis Gonzalo
 
 Mora Torres, Luis Rodrigo
 
-#Proyecto:
+Proyecto:
 *_Calculadora de Matices_*
