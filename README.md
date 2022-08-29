@@ -1,6 +1,6 @@
 # ProyectoIntegrador
 
-*_Calculadora de Matices_*
+*_Calculadora de Matrices_*
 
 # Profesor: 
 
