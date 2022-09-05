@@ -39,6 +39,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         btnMultiplicar = new javax.swing.JButton();
         btnRestar = new javax.swing.JButton();
         btnDividir = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -83,6 +84,9 @@ public class frmOperaciones extends javax.swing.JFrame {
 
         btnDividir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Dividir.png"))); // NOI18N
         getContentPane().add(btnDividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 710, 120, 40));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Calcular.png"))); // NOI18N
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 120, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Ventana 1 Integrador (900 × 800 px).png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -132,6 +136,7 @@ public class frmOperaciones extends javax.swing.JFrame {
     private javax.swing.JButton btnMultiplicar;
     private javax.swing.JButton btnRestar;
     private javax.swing.JButton btnSumar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
