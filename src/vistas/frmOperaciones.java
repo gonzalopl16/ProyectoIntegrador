@@ -9,6 +9,9 @@ package vistas;
  *
  * @author Luis Gonzalo <https://github.com/gonzalopl16>
  */
+/*
+hola soy rodrigo
+*/
 public class frmOperaciones extends javax.swing.JFrame {
 
     /**
