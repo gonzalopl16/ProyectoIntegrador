@@ -183,7 +183,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/Ventana 1 Integrador (900 &#xd7; 800&#xa0;px).png"/>
+          <Image iconType="3" name="/imagenes/Ventana 1 Integrador (900 &#xd7; 800&#xa0;px) prueba.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
       </Properties>
