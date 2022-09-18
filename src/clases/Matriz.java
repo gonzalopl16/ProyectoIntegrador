@@ -13,6 +13,9 @@ public class Matriz {
     public Matriz() {
     }
     
+    /******************************PRIMER PROTOTIPO************************************/
+    
+    
     //Suma para matrices de 2x2
 //    public int [][] suma2(int M1_0_0, int M1_0_1, int M1_1_0, int M1_1_1, 
 //            int M2_0_0, int M2_0_1, int M2_1_0, int M2_1_1){
@@ -24,6 +27,8 @@ public class Matriz {
 //        return resultado;
 //    }
     
+    
+    /******************************SEGUNDO PROTOTIPO************************************/
     //Sumar para matrices, pasando como argumentos matrices
     public int [][] suma2x2(int [][]matriz1, int [][]matriz2){
             int [][] resultado = new int [2][2];
@@ -118,6 +123,10 @@ public class Matriz {
         return resultado;
     }
     
+    
+    /******************************TERCER PROTOTIPO************************************/
+    
+    //Renderizando codigo
     public int [][] sumaGlobal(int [][]matriz1, int[][]matriz2, int tamaño){
         int [][] resultado = new int[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
@@ -128,11 +137,41 @@ public class Matriz {
         return resultado;
     }
     
+    public int [][] restaGlobal(int [][]matriz1, int[][]matriz2, int tamaño){
+        int [][] resultado = new int[tamaño][tamaño];
+        for(int i = 0; i < resultado.length;i++){
+            for(int j = 0; j < resultado[i].length; j++){
+                resultado[i][j] = matriz1[i][j]-matriz2[i][j];
+            }
+        }
+        return resultado;
+    }
+    
+    public int [][] multiplicacionGlobal(int [][]matriz1, int[][]matriz2, int tamaño){
+        int [][] resultado = new int[tamaño][tamaño];
+        for(int i = 0; i < resultado.length;i++){
+            for(int j = 0; j < resultado[i].length; j++){
+                resultado[i][j] = matriz1[i][j]*matriz2[i][j];
+            }
+        }
+        return resultado;
+    }
+    
+    public int [][] divisionGlobal(int [][]matriz1, int[][]matriz2, int tamaño){
+        int [][] resultado = new int[tamaño][tamaño];
+        for(int i = 0; i < resultado.length;i++){
+            for(int j = 0; j < resultado[i].length; j++){
+                resultado[i][j] = matriz1[i][j]/matriz2[i][j];
+            }
+        }
+        return resultado;
+    }
+    
     public String imprimirMatriz(int[][]resultado){
         String acum = "";
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
-                acum += "|" + resultado[i][j] + "|";
+                acum += "[ " + resultado[i][j] + " ]";
             }
             acum+="\n";
         }

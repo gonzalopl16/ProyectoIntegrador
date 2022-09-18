@@ -17,11 +17,13 @@ import javax.swing.JOptionPane;
 hola soy rodrigo
  */
 public class frmOperaciones extends javax.swing.JFrame {
+
     Matriz m = new Matriz();
     String tamañoMatriz;
+    int index;
     int matriz1[][];
     int matriz2[][];
-    
+
     /**
      * Creates new form frmOperaciones
      */
@@ -29,6 +31,28 @@ public class frmOperaciones extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         desabilitar();
+    }
+
+    void operación(String op) {
+        tamañoMatriz = (String) cboDimension.getSelectedItem();
+        index = cboDimension.getSelectedIndex();
+        int operacion[][] = null;
+        switch (op) {
+            case "suma":
+                operacion = m.sumaGlobal(matriz1, matriz2, index + 2);
+                break;
+            case "resta":
+                operacion = m.restaGlobal(matriz1, matriz2, index + 2);
+                break;
+            case "multiplicacion":
+                operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 2);
+                break;
+            case "division":
+                operacion = m.divisionGlobal(matriz1, matriz2, index + 2);
+                break;
+        }
+        txtArea.append("-------------------------------\n");
+        txtArea.append("La " + op + "de las Matrices " + tamañoMatriz + " es: \n" + m.imprimirMatriz(operacion));
     }
 
     void desabilitar() {
@@ -146,12 +170,27 @@ public class frmOperaciones extends javax.swing.JFrame {
         getContentPane().add(btnSumar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 710, 120, 40));
 
         btnMultiplicar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Multiplicar.png"))); // NOI18N
+        btnMultiplicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMultiplicarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnMultiplicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 710, 120, 40));
 
         btnRestar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Restar.png"))); // NOI18N
+        btnRestar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRestarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnRestar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 710, 120, 40));
 
         btnDividir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Dividir.png"))); // NOI18N
+        btnDividir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDividirActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnDividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 710, 120, 40));
 
         cboDimension.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2x2", "3x3", "4x4" }));
@@ -690,30 +729,24 @@ public class frmOperaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnInsertar2ActionPerformed
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
-        tamañoMatriz = (String) cboDimension.getSelectedItem();
-        int suma [][];
-        switch(tamañoMatriz){
-            case "2x2":
-                suma = m.sumaGlobal(matriz1,matriz2,2);
-                txtArea.append("-------------------------------\n");
-                txtArea.append("La suma de las Matrices 2x2 es: \n" + m.imprimirMatriz(suma));
-                break;
-            case "3x3":
-                suma = m.suma3x3(matriz1,matriz2);
-                txtArea.append("-------------------------------\n");
-                txtArea.append("La suma de las Matrices 3x3 es: \n" + m.imprimirMatriz(suma));
-                break;
-            case "4x4":
-                suma = m.suma3x3(matriz1,matriz2);
-                txtArea.append("-------------------------------\n");
-                txtArea.append("La suma de las Matrices 3x3 es: \n" + m.imprimirMatriz(suma));
-                break;
-        }
+        operación("suma");
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
         txtArea.setText("");
     }//GEN-LAST:event_btnBorrarActionPerformed
+
+    private void btnRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestarActionPerformed
+        operación("resta");
+    }//GEN-LAST:event_btnRestarActionPerformed
+
+    private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
+        operación("multiplicacion");
+    }//GEN-LAST:event_btnMultiplicarActionPerformed
+
+    private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
+        operación("division");
+    }//GEN-LAST:event_btnDividirActionPerformed
 
     /**
      * @param args the command line arguments
