@@ -13,9 +13,6 @@ import javax.swing.JOptionPane;
  *
  * @author Luis Gonzalo <https://github.com/gonzalopl16>
  */
-/*
-hola soy rodrigo
- */
 public class frmOperaciones extends javax.swing.JFrame {
 
     Matriz m = new Matriz();
@@ -39,21 +36,22 @@ public class frmOperaciones extends javax.swing.JFrame {
         int operacion[][] = null;
         switch (op) {
             case "suma":
-                operacion = m.sumaGlobal(matriz1, matriz2, index + 2);
+                operacion = m.sumaGlobal(matriz1, matriz2, index + 3);
                 break;
             case "resta":
-                operacion = m.restaGlobal(matriz1, matriz2, index + 2);
+                operacion = m.restaGlobal(matriz1, matriz2, index + 3);
                 break;
             case "multiplicacion":
-                operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 2);
+                operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 3);
                 break;
             case "division":
-                operacion = m.divisionGlobal(matriz1, matriz2, index + 2);
+                operacion = m.divisionGlobal(matriz1, matriz2, index + 3);
                 break;
         }
         txtArea.append("-------------------------------\n");
         txtArea.append("La " + op + "de las Matrices " + tamañoMatriz + " es: \n" + m.imprimirMatriz(operacion));
     }
+    
 
     void desabilitar() {
         M1_0_0.setEnabled(false);
@@ -193,7 +191,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(btnDividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 710, 120, 40));
 
-        cboDimension.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2x2", "3x3", "4x4" }));
+        cboDimension.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un Tamaño", "2x2", "3x3", "4x4" }));
         cboDimension.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cboDimensionItemStateChanged(evt);
@@ -568,6 +566,9 @@ public class frmOperaciones extends javax.swing.JFrame {
     private void cboDimensionItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboDimensionItemStateChanged
         tamañoMatriz = (String) cboDimension.getSelectedItem();
         switch (tamañoMatriz) {
+            case "Seleccione un Tamaño":
+                desabilitar();
+                break;
             case "2x2":
                 desabilitar();
                 M1_0_0.setEnabled(true);
