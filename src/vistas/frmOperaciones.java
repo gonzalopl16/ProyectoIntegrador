@@ -17,10 +17,11 @@ import javax.swing.JOptionPane;
 hola soy rodrigo
  */
 public class frmOperaciones extends javax.swing.JFrame {
-
+    Matriz m = new Matriz();
     String tamañoMatriz;
-    int matriz1[][] = null;
-    int matriz2[][] = null;
+    int matriz1[][];
+    int matriz2[][];
+    
     /**
      * Creates new form frmOperaciones
      */
@@ -77,7 +78,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         btnBorrar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtArea = new javax.swing.JTextArea();
         btnSumar = new javax.swing.JButton();
         btnMultiplicar = new javax.swing.JButton();
         btnRestar = new javax.swing.JButton();
@@ -123,11 +124,16 @@ public class frmOperaciones extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBorrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Borrar.png"))); // NOI18N
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 270, 120, 40));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        txtArea.setColumns(20);
+        txtArea.setRows(5);
+        jScrollPane1.setViewportView(txtArea);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, 710, 310));
 
@@ -595,7 +601,6 @@ public class frmOperaciones extends javax.swing.JFrame {
 
     private void btnInsertar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertar1ActionPerformed
         tamañoMatriz = (String) cboDimension.getSelectedItem();
-        
         switch (tamañoMatriz) {
             case "2x2":
                 matriz1 = new int[2][2];
@@ -636,6 +641,7 @@ public class frmOperaciones extends javax.swing.JFrame {
                 matriz1[3][3] = Integer.parseInt(M1_3_3.getText());
                 break;
         }
+        txtArea.append("Matriz 1: \n" + m.imprimirMatriz(matriz1));
     }//GEN-LAST:event_btnInsertar1ActionPerformed
 
     private void btnInsertar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertar2ActionPerformed
@@ -643,55 +649,71 @@ public class frmOperaciones extends javax.swing.JFrame {
         switch (tamañoMatriz) {
             case "2x2":
                 matriz2 = new int[2][2];
-                matriz2[0][0] = Integer.parseInt(M1_0_0.getText());
-                matriz2[0][1] = Integer.parseInt(M1_0_1.getText());
-                matriz2[1][0] = Integer.parseInt(M1_1_0.getText());
-                matriz2[1][1] = Integer.parseInt(M1_1_1.getText());
+                matriz2[0][0] = Integer.parseInt(M2_0_0.getText());
+                matriz2[0][1] = Integer.parseInt(M2_0_1.getText());
+                matriz2[1][0] = Integer.parseInt(M2_1_0.getText());
+                matriz2[1][1] = Integer.parseInt(M2_1_1.getText());
                 break;
             case "3x3":
                 matriz2 = new int[3][3];
-                matriz2[0][0] = Integer.parseInt(M1_0_0.getText());
-                matriz2[0][1] = Integer.parseInt(M1_0_1.getText());
-                matriz2[0][2] = Integer.parseInt(M1_0_2.getText());
-                matriz2[1][0] = Integer.parseInt(M1_1_0.getText());
-                matriz2[1][1] = Integer.parseInt(M1_1_1.getText());
-                matriz2[1][2] = Integer.parseInt(M1_1_2.getText());
-                matriz2[2][0] = Integer.parseInt(M1_2_0.getText());
-                matriz2[2][1] = Integer.parseInt(M1_2_1.getText());
-                matriz2[2][2] = Integer.parseInt(M1_2_2.getText());
+                matriz2[0][0] = Integer.parseInt(M2_0_0.getText());
+                matriz2[0][1] = Integer.parseInt(M2_0_1.getText());
+                matriz2[0][2] = Integer.parseInt(M2_0_2.getText());
+                matriz2[1][0] = Integer.parseInt(M2_1_0.getText());
+                matriz2[1][1] = Integer.parseInt(M2_1_1.getText());
+                matriz2[1][2] = Integer.parseInt(M2_1_2.getText());
+                matriz2[2][0] = Integer.parseInt(M2_2_0.getText());
+                matriz2[2][1] = Integer.parseInt(M2_2_1.getText());
+                matriz2[2][2] = Integer.parseInt(M2_2_2.getText());
                 break;
             case "4x4":
                 matriz2 = new int[4][4];
-                matriz2[0][0] = Integer.parseInt(M1_0_0.getText());
-                matriz2[0][1] = Integer.parseInt(M1_0_1.getText());
-                matriz2[0][2] = Integer.parseInt(M1_0_2.getText());
-                matriz2[0][3] = Integer.parseInt(M1_0_3.getText());
-                matriz2[1][0] = Integer.parseInt(M1_1_0.getText());
-                matriz2[1][1] = Integer.parseInt(M1_1_1.getText());
-                matriz2[1][2] = Integer.parseInt(M1_1_2.getText());
-                matriz2[1][3] = Integer.parseInt(M1_1_3.getText());
-                matriz2[2][0] = Integer.parseInt(M1_2_0.getText());
-                matriz2[2][1] = Integer.parseInt(M1_2_1.getText());
-                matriz2[2][2] = Integer.parseInt(M1_2_2.getText());
-                matriz2[2][3] = Integer.parseInt(M1_2_3.getText());
-                matriz2[3][0] = Integer.parseInt(M1_3_0.getText());
-                matriz2[3][1] = Integer.parseInt(M1_3_1.getText());
-                matriz2[3][2] = Integer.parseInt(M1_3_2.getText());
-                matriz2[3][3] = Integer.parseInt(M1_3_3.getText());
+                matriz2[0][0] = Integer.parseInt(M2_0_0.getText());
+                matriz2[0][1] = Integer.parseInt(M2_0_1.getText());
+                matriz2[0][2] = Integer.parseInt(M2_0_2.getText());
+                matriz2[0][3] = Integer.parseInt(M2_0_3.getText());
+                matriz2[1][0] = Integer.parseInt(M2_1_0.getText());
+                matriz2[1][1] = Integer.parseInt(M2_1_1.getText());
+                matriz2[1][2] = Integer.parseInt(M2_1_2.getText());
+                matriz2[1][3] = Integer.parseInt(M2_1_3.getText());
+                matriz2[2][0] = Integer.parseInt(M2_2_0.getText());
+                matriz2[2][1] = Integer.parseInt(M2_2_1.getText());
+                matriz2[2][2] = Integer.parseInt(M2_2_2.getText());
+                matriz2[2][3] = Integer.parseInt(M2_2_3.getText());
+                matriz2[3][0] = Integer.parseInt(M2_3_0.getText());
+                matriz2[3][1] = Integer.parseInt(M2_3_1.getText());
+                matriz2[3][2] = Integer.parseInt(M2_3_2.getText());
+                matriz2[3][3] = Integer.parseInt(M2_3_3.getText());
                 break;
         }
+        txtArea.append("Matriz 2: \n" + m.imprimirMatriz(matriz2));
     }//GEN-LAST:event_btnInsertar2ActionPerformed
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
-        Matriz m = new Matriz();
         tamañoMatriz = (String) cboDimension.getSelectedItem();
         int suma [][];
-        if(tamañoMatriz.equals("2x2")){
-            suma = m.suma2(matriz1[0][0], matriz1[0][1], matriz1[1][0], matriz1[1][1],
-                    matriz2[0][0], matriz2[0][1], matriz2[1][0], matriz2[1][1]);
-            JOptionPane.showMessageDialog(rootPane, Arrays.toString(suma));
+        switch(tamañoMatriz){
+            case "2x2":
+                suma = m.sumaGlobal(matriz1,matriz2,2);
+                txtArea.append("-------------------------------\n");
+                txtArea.append("La suma de las Matrices 2x2 es: \n" + m.imprimirMatriz(suma));
+                break;
+            case "3x3":
+                suma = m.suma3x3(matriz1,matriz2);
+                txtArea.append("-------------------------------\n");
+                txtArea.append("La suma de las Matrices 3x3 es: \n" + m.imprimirMatriz(suma));
+                break;
+            case "4x4":
+                suma = m.suma3x3(matriz1,matriz2);
+                txtArea.append("-------------------------------\n");
+                txtArea.append("La suma de las Matrices 3x3 es: \n" + m.imprimirMatriz(suma));
+                break;
         }
     }//GEN-LAST:event_btnSumarActionPerformed
+
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
+        txtArea.setText("");
+    }//GEN-LAST:event_btnBorrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -771,7 +793,7 @@ public class frmOperaciones extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cboDimension;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextArea txtArea;
     // End of variables declaration//GEN-END:variables
 }
