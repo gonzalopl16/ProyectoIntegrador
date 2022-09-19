@@ -16,7 +16,7 @@ public class Matriz {
     /******************************PRIMER PROTOTIPO************************************/
     
     
-    //Suma para matrices de 2x2
+//    //Suma para matrices de 2x2
 //    public int [][] suma2(int M1_0_0, int M1_0_1, int M1_1_0, int M1_1_1, 
 //            int M2_0_0, int M2_0_1, int M2_1_0, int M2_1_1){
 //            int [][] resultado = new int [2][2];
@@ -36,16 +36,6 @@ public class Matriz {
             resultado[0][1] = matriz1[0][1] + matriz2[0][1];
             resultado[1][0] = matriz1[1][0] + matriz2[1][0];
             resultado[1][1] = matriz1[1][1] + matriz2[1][1];
-        return resultado;
-    }
-    
-    //Resta para matrices de 2x2
-    public int [][] resta2x2(int [][]matriz1,int [][]matriz2){
-            int [][] resultado = new int [2][2];
-            resultado[0][0] = matriz1[0][0] - matriz2[0][0];
-            resultado[0][1] = matriz1[0][1] - matriz2[0][1];
-            resultado[1][0] = matriz1[1][0] - matriz2[1][0];
-            resultado[1][1] = matriz1[1][1] - matriz2[1][1];
         return resultado;
     }
     
@@ -126,7 +116,7 @@ public class Matriz {
     
     /******************************TERCER PROTOTIPO************************************/
     
-    //Renderizando codigo
+    //Renfactorizando codigo
     public double [][] sumaGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
         double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
@@ -151,17 +141,9 @@ public class Matriz {
         double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
-                resultado[i][j] = matriz1[i][j]*matriz2[i][j];
-            }
-        }
-        return resultado;
-    }
-    
-    public double [][] divisionGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
-        double [][] resultado = new double[tamaño][tamaño];
-        for(int i = 0; i < resultado.length;i++){
-            for(int j = 0; j < resultado[i].length; j++){
-                resultado[i][j] = matriz1[i][j]/matriz2[i][j];
+                for(int k = 0; k<resultado.length;k++){
+                    resultado[i][j] += matriz1[i][k]*matriz2[k][j];
+                }
             }
         }
         return resultado;
