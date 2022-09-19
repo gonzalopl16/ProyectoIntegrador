@@ -36,16 +36,16 @@ public class frmOperaciones extends javax.swing.JFrame {
         int operacion[][] = null;
         switch (op) {
             case "suma":
-                operacion = m.sumaGlobal(matriz1, matriz2, index + 3);
+                operacion = m.sumaGlobal(matriz1, matriz2, index + 2);
                 break;
             case "resta":
-                operacion = m.restaGlobal(matriz1, matriz2, index + 3);
+                operacion = m.restaGlobal(matriz1, matriz2, index + 2);
                 break;
             case "multiplicacion":
-                operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 3);
+                operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 2);
                 break;
             case "division":
-                operacion = m.divisionGlobal(matriz1, matriz2, index + 3);
+                operacion = m.divisionGlobal(matriz1, matriz2, index + 2);
                 break;
         }
         txtArea.append("-------------------------------\n");
@@ -191,7 +191,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(btnDividir, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 710, 120, 40));
 
-        cboDimension.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione un Tamaño", "2x2", "3x3", "4x4" }));
+        cboDimension.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2x2", "3x3", "4x4" }));
         cboDimension.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cboDimensionItemStateChanged(evt);
@@ -203,9 +203,14 @@ public class frmOperaciones extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cboDimension, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, -1, -1));
+
+        M1_0_0.setBackground(new java.awt.Color(200, 200, 200));
         getContentPane().add(M1_0_0, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 30, 30));
+
+        M1_1_0.setBackground(new java.awt.Color(200, 200, 200));
         getContentPane().add(M1_1_0, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 30, 30));
 
+        M1_3_1.setBackground(new java.awt.Color(200, 200, 200));
         M1_3_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_3_1ActionPerformed(evt);
@@ -213,6 +218,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_3_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 30, 30));
 
+        M1_0_1.setBackground(new java.awt.Color(200, 200, 200));
         M1_0_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_0_1ActionPerformed(evt);
@@ -220,6 +226,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_0_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 30, 30));
 
+        M1_2_1.setBackground(new java.awt.Color(200, 200, 200));
         M1_2_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_2_1ActionPerformed(evt);
@@ -227,6 +234,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_2_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 30, 30));
 
+        M1_0_2.setBackground(new java.awt.Color(200, 200, 200));
         M1_0_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_0_2ActionPerformed(evt);
@@ -234,6 +242,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_0_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 30, 30));
 
+        M1_0_3.setBackground(new java.awt.Color(200, 200, 200));
         M1_0_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_0_3ActionPerformed(evt);
@@ -241,6 +250,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_0_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 30, 30));
 
+        M1_1_2.setBackground(new java.awt.Color(200, 200, 200));
         M1_1_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_1_2ActionPerformed(evt);
@@ -248,6 +258,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_1_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, 30, 30));
 
+        M1_2_2.setBackground(new java.awt.Color(200, 200, 200));
         M1_2_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_2_2ActionPerformed(evt);
@@ -255,6 +266,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_2_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 30, 30));
 
+        M1_1_3.setBackground(new java.awt.Color(200, 200, 200));
         M1_1_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_1_3ActionPerformed(evt);
@@ -262,6 +274,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_1_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 30, 30));
 
+        M1_2_3.setBackground(new java.awt.Color(200, 200, 200));
         M1_2_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_2_3ActionPerformed(evt);
@@ -269,6 +282,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_2_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 30, 30));
 
+        M1_3_2.setBackground(new java.awt.Color(200, 200, 200));
         M1_3_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_3_2ActionPerformed(evt);
@@ -276,6 +290,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_3_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 30, 30));
 
+        M1_3_0.setBackground(new java.awt.Color(200, 200, 200));
         M1_3_0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_3_0ActionPerformed(evt);
@@ -283,6 +298,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_3_0, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 30, 30));
 
+        M1_2_0.setBackground(new java.awt.Color(200, 200, 200));
         M1_2_0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_2_0ActionPerformed(evt);
@@ -290,6 +306,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M1_2_0, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 30, 30));
 
+        M1_3_3.setBackground(new java.awt.Color(200, 200, 200));
         M1_3_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_3_3ActionPerformed(evt);
@@ -381,6 +398,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M2_3_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 220, 30, 30));
 
+        M1_1_1.setBackground(new java.awt.Color(200, 200, 200));
         M1_1_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 M1_1_1ActionPerformed(evt);
@@ -416,21 +434,21 @@ public class frmOperaciones extends javax.swing.JFrame {
         });
         getContentPane().add(M2_1_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, 30, 30));
 
-        btnInsertar2.setText("Insertar Matriz 2");
+        btnInsertar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Matriz 2.png"))); // NOI18N
         btnInsertar2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInsertar2ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnInsertar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, -1, -1));
+        getContentPane().add(btnInsertar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 270, 120, 40));
 
-        btnInsertar1.setText("Insertar Matriz 1");
+        btnInsertar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Matriz 1.png"))); // NOI18N
         btnInsertar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInsertar1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btnInsertar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, -1, -1));
+        getContentPane().add(btnInsertar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, 120, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Ventana 1 Integrador (900 × 800 px).png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -566,9 +584,6 @@ public class frmOperaciones extends javax.swing.JFrame {
     private void cboDimensionItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboDimensionItemStateChanged
         tamañoMatriz = (String) cboDimension.getSelectedItem();
         switch (tamañoMatriz) {
-            case "Seleccione un Tamaño":
-                desabilitar();
-                break;
             case "2x2":
                 desabilitar();
                 M1_0_0.setEnabled(true);

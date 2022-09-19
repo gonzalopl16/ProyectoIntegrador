@@ -127,11 +127,10 @@
     <Component class="javax.swing.JComboBox" name="cboDimension">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Seleccione un Tama&#xf1;o"/>
-            <StringItem index="1" value="2x2"/>
-            <StringItem index="2" value="3x3"/>
-            <StringItem index="3" value="4x4"/>
+          <StringArray count="3">
+            <StringItem index="0" value="2x2"/>
+            <StringItem index="1" value="3x3"/>
+            <StringItem index="2" value="4x4"/>
           </StringArray>
         </Property>
       </Properties>
@@ -149,6 +148,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_0_0">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="70" y="100" width="30" height="30"/>
@@ -156,6 +160,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_1_0">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="70" y="140" width="30" height="30"/>
@@ -163,6 +172,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_3_1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_3_1ActionPerformed"/>
       </Events>
@@ -173,6 +187,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_0_1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_0_1ActionPerformed"/>
       </Events>
@@ -183,6 +202,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_2_1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_2_1ActionPerformed"/>
       </Events>
@@ -193,6 +217,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_0_2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_0_2ActionPerformed"/>
       </Events>
@@ -203,6 +232,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_0_3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_0_3ActionPerformed"/>
       </Events>
@@ -213,6 +247,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_1_2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_1_2ActionPerformed"/>
       </Events>
@@ -223,6 +262,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_2_2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_2_2ActionPerformed"/>
       </Events>
@@ -233,6 +277,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_1_3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_1_3ActionPerformed"/>
       </Events>
@@ -243,6 +292,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_2_3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_2_3ActionPerformed"/>
       </Events>
@@ -253,6 +307,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_3_2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_3_2ActionPerformed"/>
       </Events>
@@ -263,6 +322,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_3_0">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_3_0ActionPerformed"/>
       </Events>
@@ -273,6 +337,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_2_0">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_2_0ActionPerformed"/>
       </Events>
@@ -283,6 +352,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_3_3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_3_3ActionPerformed"/>
       </Events>
@@ -413,6 +487,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M1_1_1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M1_1_1ActionPerformed"/>
       </Events>
@@ -464,27 +543,31 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnInsertar2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Insertar Matriz 2"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagenes/Boton Matriz 2.png"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInsertar2ActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="400" y="270" width="-1" height="-1"/>
+          <AbsoluteConstraints x="460" y="270" width="120" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="btnInsertar1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Insertar Matriz 1"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/imagenes/Boton Matriz 1.png"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInsertar1ActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="80" y="270" width="-1" height="-1"/>
+          <AbsoluteConstraints x="80" y="270" width="120" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
