@@ -367,6 +367,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_0_0">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_0_0ActionPerformed"/>
       </Events>
@@ -377,6 +382,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_0_1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_0_1ActionPerformed"/>
       </Events>
@@ -387,6 +397,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_2_3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_2_3ActionPerformed"/>
       </Events>
@@ -397,6 +412,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_0_3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_0_3ActionPerformed"/>
       </Events>
@@ -407,6 +427,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_1_0">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_1_0ActionPerformed"/>
       </Events>
@@ -417,6 +442,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_1_1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_1_1ActionPerformed"/>
       </Events>
@@ -427,6 +457,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_1_2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_1_2ActionPerformed"/>
       </Events>
@@ -437,6 +472,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_2_0">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_2_0ActionPerformed"/>
       </Events>
@@ -447,6 +487,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_3_0">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_3_0ActionPerformed"/>
       </Events>
@@ -457,6 +502,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_2_1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_2_1ActionPerformed"/>
       </Events>
@@ -467,6 +517,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_3_1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_3_1ActionPerformed"/>
       </Events>
@@ -477,6 +532,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_3_2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_3_2ActionPerformed"/>
       </Events>
@@ -502,6 +562,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_0_2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_0_2ActionPerformed"/>
       </Events>
@@ -512,6 +577,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_3_3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_3_3ActionPerformed"/>
       </Events>
@@ -522,6 +592,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_2_2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_2_2ActionPerformed"/>
       </Events>
@@ -532,6 +607,11 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="M2_1_3">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="c8" red="c8" type="rgb"/>
+        </Property>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="M2_1_3ActionPerformed"/>
       </Events>
@@ -544,7 +624,7 @@
     <Component class="javax.swing.JButton" name="btnInsertar2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/Boton Matriz 2.png"/>
+          <Image iconType="3" name="/imagenes/Boton Matriz 1.png"/>
         </Property>
       </Properties>
       <Events>
@@ -559,7 +639,7 @@
     <Component class="javax.swing.JButton" name="btnInsertar1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagenes/Boton Matriz 1.png"/>
+          <Image iconType="3" name="/imagenes/Boton Matriz 2.png"/>
         </Property>
       </Properties>
       <Events>
