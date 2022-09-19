@@ -168,8 +168,8 @@ public class Matriz {
     }
     
     /*************************Gauss*****************************/
-    //Convirtiendo a 1 la diagonal y 
-    public double [][] mitadInferior(double [][]matriz, int tamaño){
+    //Convirtiendo a 1 la diagonal y rellenando la mitad inferior con 0
+    public double [][] mitadInferior(double [][]matriz){
         double[][] resultado = matriz;
         double valorPosicion;
         for(int i=0; i<resultado.length;i++){

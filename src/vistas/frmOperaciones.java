@@ -42,7 +42,7 @@ public class frmOperaciones extends javax.swing.JFrame {
                 operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 2);
                 break;
             case "division":
-                operacion = m.mitadInferior(matriz1, index + 2);
+                operacion = m.mitadInferior(matriz1);
                 break;
         }
         txtArea.append("-------------------------------\n");
