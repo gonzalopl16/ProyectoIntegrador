@@ -33,7 +33,8 @@ public class frmOperaciones extends javax.swing.JFrame {
         double operacion[][] = null;
         switch (op) {
             case "suma":
-                operacion = m.sumaGlobal(matriz1, matriz2, index + 2);
+                txtArea.append(m.sumaGlobalProcedimiento(matriz1, matriz2, index+2));;
+//                operacion = m.sumaGlobal(matriz1, matriz2, index + 2);
                 break;
             case "resta":
                 operacion = m.restaGlobal(matriz1, matriz2, index + 2);
@@ -42,11 +43,11 @@ public class frmOperaciones extends javax.swing.JFrame {
                 operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 2);
                 break;
             case "division":
-                operacion = m.mitadInferior(matriz1);
+//                operacion = m.mitadInferior(matriz1);
                 break;
         }
         txtArea.append("-------------------------------\n");
-        txtArea.append("La " + op + "de las Matrices " + tamañoMatriz + " es: \n" + m.imprimirMatriz(operacion));
+//        txtArea.append("La " + op + " de las Matrices " + tamañoMatriz + " es: \n" + m.imprimirMatriz(operacion));
     }
     
 
@@ -154,7 +155,7 @@ public class frmOperaciones extends javax.swing.JFrame {
         txtArea.setRows(5);
         jScrollPane1.setViewportView(txtArea);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, 710, 310));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 710, 310));
 
         btnSumar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Sumar.png"))); // NOI18N
         btnSumar.addActionListener(new java.awt.event.ActionListener() {
