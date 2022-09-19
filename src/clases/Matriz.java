@@ -127,8 +127,8 @@ public class Matriz {
     /******************************TERCER PROTOTIPO************************************/
     
     //Renderizando codigo
-    public int [][] sumaGlobal(int [][]matriz1, int[][]matriz2, int tamaño){
-        int [][] resultado = new int[tamaño][tamaño];
+    public double [][] sumaGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
+        double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
                 resultado[i][j] = matriz1[i][j]+matriz2[i][j];
@@ -137,8 +137,8 @@ public class Matriz {
         return resultado;
     }
     
-    public int [][] restaGlobal(int [][]matriz1, int[][]matriz2, int tamaño){
-        int [][] resultado = new int[tamaño][tamaño];
+    public double [][] restaGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
+        double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
                 resultado[i][j] = matriz1[i][j]-matriz2[i][j];
@@ -147,8 +147,8 @@ public class Matriz {
         return resultado;
     }
     
-    public int [][] multiplicacionGlobal(int [][]matriz1, int[][]matriz2, int tamaño){
-        int [][] resultado = new int[tamaño][tamaño];
+    public double [][] multiplicacionGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
+        double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
                 resultado[i][j] = matriz1[i][j]*matriz2[i][j];
@@ -157,8 +157,8 @@ public class Matriz {
         return resultado;
     }
     
-    public int [][] divisionGlobal(int [][]matriz1, int[][]matriz2, int tamaño){
-        int [][] resultado = new int[tamaño][tamaño];
+    public double [][] divisionGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
+        double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
                 resultado[i][j] = matriz1[i][j]/matriz2[i][j];
@@ -167,7 +167,29 @@ public class Matriz {
         return resultado;
     }
     
-    public String imprimirMatriz(int[][]resultado){
+    /*************************Gauss*****************************/
+    //Convirtiendo a 1 la diagonal y 
+    public double [][] mitadInferior(double [][]matriz, int tamaño){
+        double[][] resultado = matriz;
+        double valorPosicion;
+        for(int i=0; i<resultado.length;i++){
+            valorPosicion = resultado[i][i];
+            for(int j=0;j<resultado[0].length;j++){
+                resultado[i][j]= resultado[i][j]/valorPosicion;
+            }
+            if(i<=resultado.length-2){
+                for(int j=i+1; j<resultado.length;j++){
+                    valorPosicion = resultado[j][i];
+                    for(int k=0;k<resultado.length;k++){
+                        resultado[j][k]=(resultado[j][k]-(valorPosicion- resultado[i][k]));
+                    }
+                }
+            }
+        }
+        return resultado;
+    }
+    
+    public String imprimirMatriz(double[][]resultado){
         String acum = "";
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){

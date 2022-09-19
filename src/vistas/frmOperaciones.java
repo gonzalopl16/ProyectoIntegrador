@@ -18,8 +18,8 @@ public class frmOperaciones extends javax.swing.JFrame {
     Matriz m = new Matriz();
     String tamañoMatriz;
     int index;
-    int matriz1[][];
-    int matriz2[][];
+    double matriz1[][];
+    double matriz2[][];
 
     public frmOperaciones() {
         initComponents();
@@ -30,7 +30,7 @@ public class frmOperaciones extends javax.swing.JFrame {
     void operación(String op) {
         tamañoMatriz = (String) cboDimension.getSelectedItem();
         index = cboDimension.getSelectedIndex();
-        int operacion[][] = null;
+        double operacion[][] = null;
         switch (op) {
             case "suma":
                 operacion = m.sumaGlobal(matriz1, matriz2, index + 2);
@@ -42,7 +42,7 @@ public class frmOperaciones extends javax.swing.JFrame {
                 operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 2);
                 break;
             case "division":
-                operacion = m.divisionGlobal(matriz1, matriz2, index + 2);
+                operacion = m.mitadInferior(matriz1, index + 2);
                 break;
         }
         txtArea.append("-------------------------------\n");
@@ -671,14 +671,14 @@ public class frmOperaciones extends javax.swing.JFrame {
         tamañoMatriz = (String) cboDimension.getSelectedItem();
         switch (tamañoMatriz) {
             case "2x2":
-                matriz1 = new int[2][2];
+                matriz1 = new double[2][2];
                 matriz1[0][0] = Integer.parseInt(M1_0_0.getText());
                 matriz1[0][1] = Integer.parseInt(M1_0_1.getText());
                 matriz1[1][0] = Integer.parseInt(M1_1_0.getText());
                 matriz1[1][1] = Integer.parseInt(M1_1_1.getText());
                 break;
             case "3x3":
-                matriz1 = new int[3][3];
+                matriz1 = new double[3][3];
                 matriz1[0][0] = Integer.parseInt(M1_0_0.getText());
                 matriz1[0][1] = Integer.parseInt(M1_0_1.getText());
                 matriz1[0][2] = Integer.parseInt(M1_0_2.getText());
@@ -690,7 +690,7 @@ public class frmOperaciones extends javax.swing.JFrame {
                 matriz1[2][2] = Integer.parseInt(M1_2_2.getText());
                 break;
             case "4x4":
-                matriz1 = new int[4][4];
+                matriz1 = new double[4][4];
                 matriz1[0][0] = Integer.parseInt(M1_0_0.getText());
                 matriz1[0][1] = Integer.parseInt(M1_0_1.getText());
                 matriz1[0][2] = Integer.parseInt(M1_0_2.getText());
@@ -716,14 +716,14 @@ public class frmOperaciones extends javax.swing.JFrame {
         tamañoMatriz = (String) cboDimension.getSelectedItem();
         switch (tamañoMatriz) {
             case "2x2":
-                matriz2 = new int[2][2];
+                matriz2 = new double[2][2];
                 matriz2[0][0] = Integer.parseInt(M2_0_0.getText());
                 matriz2[0][1] = Integer.parseInt(M2_0_1.getText());
                 matriz2[1][0] = Integer.parseInt(M2_1_0.getText());
                 matriz2[1][1] = Integer.parseInt(M2_1_1.getText());
                 break;
             case "3x3":
-                matriz2 = new int[3][3];
+                matriz2 = new double[3][3];
                 matriz2[0][0] = Integer.parseInt(M2_0_0.getText());
                 matriz2[0][1] = Integer.parseInt(M2_0_1.getText());
                 matriz2[0][2] = Integer.parseInt(M2_0_2.getText());
@@ -735,7 +735,7 @@ public class frmOperaciones extends javax.swing.JFrame {
                 matriz2[2][2] = Integer.parseInt(M2_2_2.getText());
                 break;
             case "4x4":
-                matriz2 = new int[4][4];
+                matriz2 = new double[4][4];
                 matriz2[0][0] = Integer.parseInt(M2_0_0.getText());
                 matriz2[0][1] = Integer.parseInt(M2_0_1.getText());
                 matriz2[0][2] = Integer.parseInt(M2_0_2.getText());
