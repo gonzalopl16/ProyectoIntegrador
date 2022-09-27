@@ -30,24 +30,22 @@ public class frmOperaciones extends javax.swing.JFrame {
     void operación(String op) {
         tamañoMatriz = (String) cboDimension.getSelectedItem();
         index = cboDimension.getSelectedIndex();
-        double operacion[][] = null;
         switch (op) {
             case "suma":
                 txtArea.append(m.sumaGlobalProcedimiento(matriz1, matriz2, index+2));;
 //                operacion = m.sumaGlobal(matriz1, matriz2, index + 2);
                 break;
             case "resta":
-                operacion = m.restaGlobal(matriz1, matriz2, index + 2);
+                txtArea.append(m.restaGlobal(matriz1, matriz2, index+2));
                 break;
             case "multiplicacion":
-                operacion = m.multiplicacionGlobal(matriz1, matriz2, index + 2);
+                txtArea.append(m.multiplicacionGlobal(matriz1, matriz2, index + 2));
                 break;
             case "division":
 //                operacion = m.mitadInferior(matriz1);
                 break;
         }
-        txtArea.append("-------------------------------\n");
-        txtArea.append("La " + op + " de las Matrices " + tamañoMatriz + " es: \n" + m.imprimirMatriz(operacion));
+//        txtArea.append("La " + op + " de las Matrices " + tamañoMatriz + " es: \n" + m.imprimirMatriz(operacion));
     }
     
 
@@ -418,7 +416,7 @@ public class frmOperaciones extends javax.swing.JFrame {
                 M2_0_2ActionPerformed(evt);
             }
         });
-        getContentPane().add(M2_0_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 30, 30));
+        getContentPane().add(M2_0_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, 30, 30));
 
         M2_3_3.setBackground(new java.awt.Color(200, 200, 200));
         M2_3_3.addActionListener(new java.awt.event.ActionListener() {

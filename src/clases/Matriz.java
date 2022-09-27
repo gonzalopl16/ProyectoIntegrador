@@ -13,25 +13,15 @@ public class Matriz {
     public Matriz() {
     }
     
-    //Renfactorizando codigo
-    public double [][] sumaGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
-        double [][] resultado = new double[tamaño][tamaño];
-        for(int i = 0; i < resultado.length;i++){
-            for(int j = 0; j < resultado[i].length; j++){
-                resultado[i][j] = matriz1[i][j]+matriz2[i][j];
-            }
-        }
-        return resultado;
-    }
-    
     //Prueba mostrar procedimiento
     public String sumaGlobalProcedimiento(double [][]matriz1, double[][]matriz2, int tamaño){
         String acum = "";
+        acum += "------------------------------------------------\n";
         double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
                 resultado[i][j] = matriz1[i][j]+matriz2[i][j];
-                acum += "resultado["+i+"]["+j+"] = " + matriz1[i][j]+ " + " + matriz2[i][j] + "= " +  resultado[i][j] + "\n";
+                acum += "resultado["+i+"]["+j+"] = " + matriz1[i][j]+ " + " + matriz2[i][j] + " = " +  resultado[i][j] + "\n";
             }
             acum += "\n";
         }
@@ -39,26 +29,41 @@ public class Matriz {
         return acum;
     }
     
-    public double [][] restaGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
+    public String restaGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
+        String acum = "";
+        acum += "------------------------------------------------\n";
         double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
                 resultado[i][j] = matriz1[i][j]-matriz2[i][j];
+                acum += "resultado["+i+"]["+j+"] = " + matriz1[i][j]+ " - " + matriz2[i][j] + " = " +  resultado[i][j] + "\n";
             }
+            acum += "\n";
         }
-        return resultado;
+        acum += "\nResultado: \n" + imprimirMatriz(resultado);
+        return acum;
     }
     
-    public double [][] multiplicacionGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
+    public String multiplicacionGlobal(double [][]matriz1, double[][]matriz2, int tamaño){
+        String acum = "";
+        acum += "------------------------------------------------\n";
         double [][] resultado = new double[tamaño][tamaño];
         for(int i = 0; i < resultado.length;i++){
             for(int j = 0; j < resultado[i].length; j++){
+                acum += "resultado["+i+"]["+j+"] = ";
                 for(int k = 0; k<resultado.length;k++){
                     resultado[i][j] += matriz1[i][k]*matriz2[k][j];
+                    if(k == resultado.length-1){
+                        acum += matriz1[i][k]+ " * " + matriz2[k][j] + " * " +  resultado[k][j] + "\n";
+                    }else{
+                        acum += matriz1[i][k]+ " * " + matriz2[k][j] + " * " +  resultado[k][j] + "+";
+                    }
                 }
             }
+            acum += "\n";
         }
-        return resultado;
+        acum += "\nResultado: \n" + imprimirMatriz(resultado);
+        return acum;
     }
     
     /*************************Gauss*****************************/
