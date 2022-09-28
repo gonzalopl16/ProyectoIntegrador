@@ -66,13 +66,13 @@ public class frmLogin extends javax.swing.JFrame {
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         String id = txtUser.getText();
         String password = txtPassword.getText();
-        UsuarioDemo userDemo = obj.buscarUDId(id);
-        Usuario userPremiun;
+        UsuarioDemo userDemo = obj.buscarUD(id);
+        UsuarioPremium userPremiun;
         if(id.isEmpty() || password.isEmpty()){
             JOptionPane.showMessageDialog(null, "Debe llenar los campos");
         }else {
             if(userDemo == null){
-                userPremiun = obj.buscarUPId(id);
+                userPremiun = obj.buscarUP(id);
                 if(userPremiun == null){
                     JOptionPane.showMessageDialog(null, "Usuario equivocado");
                 }else{
@@ -85,7 +85,7 @@ public class frmLogin extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(null, "Contraseña incorrecta");
                     }
                 }
-            } else{
+            } else {
                 if(userDemo.getContraseña().equals(password)){
                     frmOperacionesDemo demo = new frmOperacionesDemo();
                     JOptionPane.showMessageDialog(null, "Bienvenido a tu prueba gratuita " + userDemo.getId());

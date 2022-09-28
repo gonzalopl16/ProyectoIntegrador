@@ -19,7 +19,7 @@ public class listaUsuarios {
         list.add(new UsuarioPremium("Gonzalo", "12345"));
     }
 
-    public UsuarioDemo buscarUDId(String id){
+    public UsuarioDemo buscarUD(String id){
         for(Usuario x: list){
             if (x instanceof UsuarioDemo) {
                 if(x.getId().equals(id))
@@ -29,7 +29,7 @@ public class listaUsuarios {
         return null;
     }
     
-    public UsuarioPremium buscarUPId(String id){
+    public UsuarioPremium buscarUP(String id){
         for(Usuario x: list){
             if (x instanceof UsuarioPremium) {
                 if(x.getId().equals(id))

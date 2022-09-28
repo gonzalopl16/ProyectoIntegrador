@@ -10,6 +10,7 @@ package usuarios;
  * @author Luis Gonzalo <https://github.com/gonzalopl16>
  */
 public class Usuario {
+    private String nombre;
     private String id;
     private String contraseña;
 

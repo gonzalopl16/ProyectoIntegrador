@@ -30,6 +30,7 @@ public class frmOperaciones extends javax.swing.JFrame {
     void operación(String op) {
         tamañoMatriz = (String) cboDimension.getSelectedItem();
         index = cboDimension.getSelectedIndex();
+        double [][] operacion = new double [index+2][index+2];
         switch (op) {
             case "suma":
                 txtArea.append(m.sumaGlobalProcedimiento(matriz1, matriz2, index+2));;
@@ -39,13 +40,15 @@ public class frmOperaciones extends javax.swing.JFrame {
                 txtArea.append(m.restaGlobal(matriz1, matriz2, index+2));
                 break;
             case "multiplicacion":
-                txtArea.append(m.multiplicacionGlobal(matriz1, matriz2, index + 2));
+                txtArea.append(m.multiplicacionProcedimiento(matriz1, matriz2, index + 2));
                 break;
             case "division":
-//                operacion = m.mitadInferior(matriz1);
+//                txtArea.append("" + m.imprimirMatriz(m.matrizIdentidad(index+2)) + "\n");
+//                operacion = m.división(matriz1,matriz2,index+2);
+//                txtArea.append("La " + op + " de las Matrices " + tamañoMatriz + " es: \n" + m.imprimirMatriz(operacion));
+                txtArea.append(m.reduccionProcedimiento(matriz2, index+2));
                 break;
         }
-//        txtArea.append("La " + op + " de las Matrices " + tamañoMatriz + " es: \n" + m.imprimirMatriz(operacion));
     }
     
 
