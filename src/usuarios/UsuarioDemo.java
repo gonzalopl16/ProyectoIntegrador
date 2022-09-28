@@ -11,8 +11,8 @@ package usuarios;
  */
 public class UsuarioDemo extends Usuario{
     
-    public UsuarioDemo(String id, String contraseña) {
-        super(id, contraseña);
+    public UsuarioDemo(String id, String contraseña, String nombre) {
+        super(id, contraseña, nombre);
     }
     
 }

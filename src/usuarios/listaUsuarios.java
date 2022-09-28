@@ -15,8 +15,8 @@ public class listaUsuarios {
     private List<Usuario> list = new ArrayList<>();
 
     public listaUsuarios() {
-        list.add(new UsuarioDemo("Luis", "12345"));
-        list.add(new UsuarioPremium("Gonzalo", "12345"));
+        list.add(new UsuarioDemo("U12345@utp.edu.pe", "12345", "Luis"));
+        list.add(new UsuarioPremium("U18214630@utp.edu.pe", "12345", "Gonzalo"));
     }
 
     public UsuarioDemo buscarUD(String id){

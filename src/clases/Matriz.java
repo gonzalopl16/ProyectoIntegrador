@@ -141,7 +141,7 @@ public class Matriz {
             for (int i = 0; i < matriz.length; i++) {
                 pivote = matriz[i][i];
                 acum += "El pivote será:\n"
-                        + pivote + "\n";
+                        + pivote + "\n\nOperando en la fila\n";
                 for (int j = 0; j < matriz.length; j++) {
                     matriz[i][j] = matriz[i][j] / pivote;
                     identidad[i][j] = identidad[i][j] / pivote;
@@ -151,7 +151,6 @@ public class Matriz {
                         acum += "Identidad[" + i + " , " + j + "] = " + identidad[i][j] + "÷" + pivote + "\n";
                     }
                 }
-                acum += "\n";
                 for (int j = 0; j < matriz.length; j++) {
                     if (i != j) {
                         aux = matriz[j][i];
@@ -166,11 +165,12 @@ public class Matriz {
                             }
                         }
                     }
-                    acum += "\n";
                 }
                 acum += "\n";
             }
-            acum += "Ahora el mismo procedimiento se realizará en la matriz identidad\n";
+            if(contador == 0){
+                acum += "Ahora el mismo procedimiento se realizará en la matriz identidad\n"; 
+            }
             contador++;
         }
         acum += "\nLa matriz inversa será:\n" + imprimirMatriz(identidad);

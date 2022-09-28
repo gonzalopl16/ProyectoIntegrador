@@ -34,31 +34,31 @@ public class frmLogin extends javax.swing.JFrame {
     private void initComponents() {
 
         txtUser = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JPasswordField();
         btnLogin = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 170, -1));
 
-        jLabel2.setText("Usuario");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, -1, -1));
+        txtUser.setBackground(new java.awt.Color(191, 105, 105));
+        txtUser.setBorder(null);
+        getContentPane().add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 240, 170, -1));
 
-        jLabel3.setText("Contraseña");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, -1));
-        getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 160, -1));
+        txtPassword.setBackground(new java.awt.Color(191, 105, 105));
+        txtPassword.setBorder(null);
+        getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 170, 20));
 
-        btnLogin.setText("Ingresar");
+        btnLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Login.jpg"))); // NOI18N
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, -1, -1));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 450));
+        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 410, 120, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Ventana Login.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -78,7 +78,7 @@ public class frmLogin extends javax.swing.JFrame {
                 }else{
                     if(userPremiun.getContraseña().equals(password)){
                         frmOperaciones premium = new frmOperaciones();
-                        JOptionPane.showMessageDialog(null, "Bienvenido " + userPremiun.getId());
+                        JOptionPane.showMessageDialog(null, "Bienvenido " + userPremiun.getNombre());
                         premium.setVisible(true);
                         this.dispose();
                     }else{
@@ -88,7 +88,7 @@ public class frmLogin extends javax.swing.JFrame {
             } else {
                 if(userDemo.getContraseña().equals(password)){
                     frmOperacionesDemo demo = new frmOperacionesDemo();
-                    JOptionPane.showMessageDialog(null, "Bienvenido a tu prueba gratuita " + userDemo.getId());
+                    JOptionPane.showMessageDialog(null, "Bienvenido a tu prueba gratuita " + userDemo.getNombre());
                     demo.setVisible(true);
                     this.dispose();
                 }else{
@@ -136,8 +136,6 @@ public class frmLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogin;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables

@@ -14,9 +14,10 @@ public class Usuario {
     private String id;
     private String contraseña;
 
-    public Usuario(String id, String contraseña) {
+    public Usuario(String id, String contraseña, String nombre) {
         this.id = id;
         this.contraseña = contraseña;
+        this.nombre = nombre;
     }
     
     public String getId() {
@@ -33,6 +34,14 @@ public class Usuario {
 
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
 }
