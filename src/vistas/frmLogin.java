@@ -50,6 +50,7 @@ public class frmLogin extends javax.swing.JFrame {
         getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 170, 20));
 
         btnLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Boton Login.jpg"))); // NOI18N
+        btnLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginActionPerformed(evt);

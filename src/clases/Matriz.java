@@ -47,7 +47,7 @@ public class Matriz {
 
     public String multiplicacionProcedimiento(double[][] matriz1, double[][] matriz2, int tamaño) {
         String acum = "";
-        acum += "------------------------------------------------\n";
+        acum += "\n------------------------------------------------\n";
         double[][] resultado = new double[tamaño][tamaño];
         for (int i = 0; i < resultado.length; i++) {
             for (int j = 0; j < resultado[i].length; j++) {
@@ -132,16 +132,16 @@ public class Matriz {
     //reducción con procedimiento
     public String reduccionProcedimiento(double[][] matriz, int tamaño) {
         String acum = "";
+        acum += "\n------------------------------------------------\n";
         int contador = 0;
         double[][] identidad = matrizIdentidad(tamaño);
-        acum += "La Matriz que se operará será: \n" + imprimirMatriz(matriz) + " \nLa matriz identidad será: \n" + imprimirMatriz(identidad);
+        acum += "La Matriz que se operará será: \n" + imprimirMatriz(matriz) + "La matriz identidad será: \n" + imprimirMatriz(identidad);
         double aux, pivote;
-        acum += "Primero conertimos la matriz resultado en la matriz identidad:\n";
+        acum += "\nPrimero convertimos la matriz resultado en la matriz identidad:\n";
         while (contador <= 1) {
             for (int i = 0; i < matriz.length; i++) {
                 pivote = matriz[i][i];
-                acum += "El pivote será:\n"
-                        + pivote + "\n\nOperando en la fila\n";
+                acum += "\nOperando en la fila\n";
                 for (int j = 0; j < matriz.length; j++) {
                     matriz[i][j] = matriz[i][j] / pivote;
                     identidad[i][j] = identidad[i][j] / pivote;
